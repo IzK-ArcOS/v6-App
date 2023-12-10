@@ -1,6 +1,7 @@
 import { DefaultIcon } from "$ts/images/apps";
 import { Runtime } from "./runtime";
 import AppSvelte from "../App.svelte";
+import { App } from "$types/app";
 
 export const app: App = {
   metadata: {
@@ -22,5 +23,11 @@ export const app: App = {
     maximized: false,
     headless: false,
     fullscreen: false,
+    resizable: false
+  },
+  controls: {
+    minimize: false,
+    maximize: false,
+    close: false
   }
 }

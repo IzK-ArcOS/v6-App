@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { App } from "$types/app";
   import "./css/main.css";
 
   export let app: App;
